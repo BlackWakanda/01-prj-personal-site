@@ -1,0 +1,183 @@
+/* Drawings gallery styles */
+.drawings-gallery {
+	display: flex;
+	gap: 16px;
+	margin-top: 16px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.drawings-gallery img {
+	width: 120px;
+	height: auto;
+	border-radius: 8px;
+	border: 2px solid #ccc;
+	background: #fff;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+/* Simple CSS for your personal website */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f9f9f9;
+	color: #222;
+}
+
+/* Navigation Bar */
+.navbar {
+	background: #f4a623;
+	padding: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar li {
+	margin: 0;
+}
+.navbar a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 12px 18px;
+	font-size: 16px;
+	transition: background 0.2s;
+}
+.navbar a:hover {
+	background: #e38d13;
+}
+
+/* Hero Section */
+.hero {
+	background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+	text-align: center;
+	padding: 60px 16px 40px 16px;
+	color: #222;
+	position: relative;
+}
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(100, 180, 180, 0.5);
+	z-index: 1;
+}
+.hero * {
+	position: relative;
+	z-index: 2;
+}
+.avatar {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	margin: 24px auto 16px auto;
+	display: block;
+	border: 8px solid #fff;
+	background: #fff;
+}
+.hero h1 {
+	margin-bottom: 8px;
+	color: #222;
+}
+.hero p {
+	color: #222;
+}
+
+/* Bio Section */
+.bio {
+	background: #7e8cc4cc;
+	color: #fff;
+	text-align: center;
+	padding: 40px 16px;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+.bio h2 {
+	margin-top: 0;
+}
+.bio img {
+	width: 150px;
+	height: auto;
+	border-radius: 8px;
+	border: 2px solid #fff;
+	margin: 10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.bio img:hover {
+	transform: scale(1.05);
+	transition: transform 0.2s;
+}
+
+/* Skills Section */
+.skills-section {
+	background: #dbe6c4;
+	text-align: center;
+	padding: 40px 16px;
+	margin: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+.skills-section h2 {
+	margin-top: 0;
+}
+.skills-list {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	margin-top: 24px;
+}
+.skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 16px;
+}
+.skill img {
+	width: 56px;
+	height: 56px;
+	margin-bottom: 8px;
+}
+.skill span {
+	margin-top: 4px;
+	color: #444;
+}
+
+/* Portfolio Section */
+.portfolio {
+	padding: 32px 16px;
+	max-width: 700px;
+	margin: 0 auto 24px auto;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.portfolio .project-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.portfolio .project {
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #fafbfc;
+}
+
+/* Footer */
+footer {
+	background: #f4a623;
+	color: #fff;
+	text-align: center;
+	padding: 12px 0;
+	font-size: 15px;
+	margin-top: 32px;
+}
